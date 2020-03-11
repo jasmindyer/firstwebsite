@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Bellota&display=swap');
+body{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 3fr ;
+    grid-template-rows: 50px 500px ;
+    grid-template-areas: 
+    'head head'
+    'nav main' 
+    ;
+}
+
+
+body header{
+    grid-area: head ;
+    text-align: center;
+    background-color: rgb(157, 219, 214);
+    color: rgb(54, 122, 124);
+    border-radius: 5px;
+}
+
+body nav{
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    background-color: rgb(157, 219, 214);
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color: rgb(54, 122, 124);
+    background-color: rgb(118, 194, 187);
+}
+nav a:active{
+    color: rgb(54, 122, 124);
+    background-color:  rgb(27, 86, 88);;
+
+
+}
+body main{
+    grid-area: main;
+}
+main {
+    background-color: white;
+    text-align: center;
+    color: rgb(54, 122, 124);
+}
+main p {
+color: tomato;
+font-family: 'Bellota', cursive;
+font-size: 50px;
+}
